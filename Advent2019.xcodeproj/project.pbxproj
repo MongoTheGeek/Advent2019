@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC3D83EE2395A98200782493 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D83ED2395A98200782493 /* main.swift */; };
+		DC3D83F32395A99900782493 /* 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D83F22395A99900782493 /* 2.swift */; };
 		DC676BF923944D910088512B /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC676BF823944D400088512B /* 1.swift */; };
 		DCD86593239448D1003FD49F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD86592239448D1003FD49F /* main.swift */; };
 		DCD865A22394492C003FD49F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD865A12394492C003FD49F /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DC3D83E92395A98100782493 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		DCD8658D239448D1003FD49F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC3D83EB2395A98100782493 /* 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3D83ED2395A98200782493 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DC3D83F22395A99900782493 /* 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.swift; sourceTree = "<group>"; };
 		DC676BF823944D400088512B /* 1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1.swift; sourceTree = "<group>"; };
 		DCD8658F239448D1003FD49F /* Advent2019 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Advent2019; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD86592239448D1003FD49F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -42,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC3D83E82395A98100782493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD8658C239448D1003FD49F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,11 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC3D83EC2395A98100782493 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				DC3D83ED2395A98200782493 /* main.swift */,
+				DC3D83F22395A99900782493 /* 2.swift */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
 		DCD86586239448D1003FD49F = {
 			isa = PBXGroup;
 			children = (
 				DCD86591239448D1003FD49F /* Advent2019 */,
 				DCD865A02394492C003FD49F /* 1 */,
+				DC3D83EC2395A98100782493 /* 2 */,
 				DCD86590239448D1003FD49F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +104,7 @@
 			children = (
 				DCD8658F239448D1003FD49F /* Advent2019 */,
 				DCD8659F2394492C003FD49F /* 1 */,
+				DC3D83EB2395A98100782493 /* 2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +129,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC3D83EA2395A98100782493 /* 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3D83F12395A98200782493 /* Build configuration list for PBXNativeTarget "2" */;
+			buildPhases = (
+				DC3D83E72395A98100782493 /* Sources */,
+				DC3D83E82395A98100782493 /* Frameworks */,
+				DC3D83E92395A98100782493 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 2;
+			productName = 2;
+			productReference = DC3D83EB2395A98100782493 /* 2 */;
+			productType = "com.apple.product-type.tool";
+		};
 		DCD8658E239448D1003FD49F /* Advent2019 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD86596239448D1003FD49F /* Build configuration list for PBXNativeTarget "Advent2019" */;
@@ -141,6 +190,9 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = xxx;
 				TargetAttributes = {
+					DC3D83EA2395A98100782493 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					DCD8658E239448D1003FD49F = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -164,11 +216,21 @@
 			targets = (
 				DCD8658E239448D1003FD49F /* Advent2019 */,
 				DCD8659E2394492C003FD49F /* 1 */,
+				DC3D83EA2395A98100782493 /* 2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC3D83E72395A98100782493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3D83F32395A99900782493 /* 2.swift in Sources */,
+				DC3D83EE2395A98200782493 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCD8658B239448D1003FD49F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +251,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		DC3D83EF2395A98200782493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC3D83F02395A98200782493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		DCD86594239448D1003FD49F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -341,6 +421,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC3D83F12395A98200782493 /* Build configuration list for PBXNativeTarget "2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3D83EF2395A98200782493 /* Debug */,
+				DC3D83F02395A98200782493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCD8658A239448D1003FD49F /* Build configuration list for PBXProject "Advent2019" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
