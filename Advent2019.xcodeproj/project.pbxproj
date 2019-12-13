@@ -11,6 +11,9 @@
 		DC05911B239D894300E9A418 /* 8.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC05911A239D894300E9A418 /* 8.swift */; };
 		DC3D83EE2395A98200782493 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D83ED2395A98200782493 /* main.swift */; };
 		DC3D83F32395A99900782493 /* 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D83F22395A99900782493 /* 2.swift */; };
+		DC53BC5323A1E4E100A25E56 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53BC5223A1E4E100A25E56 /* main.swift */; };
+		DC53BC5723A1E4EB00A25E56 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC728549239F0F0A00BD66DF /* Computer.swift */; };
+		DC53BC5923A1E4FB00A25E56 /* 11.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53BC5823A1E4FB00A25E56 /* 11.swift */; };
 		DC619692239B5B5E00FFD28C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC619691239B5B5E00FFD28C /* main.swift */; };
 		DC619697239B5B6C00FFD28C /* 6.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC619696239B5B6C00FFD28C /* 6.swift */; };
 		DC61969F239B6A6A00FFD28C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61969E239B6A6A00FFD28C /* main.swift */; };
@@ -19,6 +22,8 @@
 		DC728543239F0E6200BD66DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC728542239F0E6200BD66DF /* main.swift */; };
 		DC728548239F0E7300BD66DF /* 9.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC728547239F0E7300BD66DF /* 9.swift */; };
 		DC72854A239F0F0A00BD66DF /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC728549239F0F0A00BD66DF /* Computer.swift */; };
+		DC728552239F66DC00BD66DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC728551239F66DC00BD66DF /* main.swift */; };
+		DC728557239F66F000BD66DF /* 10.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC728556239F66F000BD66DF /* 10.swift */; };
 		DCA948B22396271C00FDD597 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA948B12396271C00FDD597 /* main.swift */; };
 		DCA948B72396273400FDD597 /* 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA948B62396273400FDD597 /* 3.swift */; };
 		DCAC8E8823995F9F000F814A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC8E8723995F9F000F814A /* main.swift */; };
@@ -48,6 +53,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		DC53BC4E23A1E4E100A25E56 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		DC61968D239B5B5E00FFD28C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,6 +81,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		DC72853E239F0E6200BD66DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DC72854D239F66DC00BD66DF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -129,6 +152,9 @@
 		DC3D83EB2395A98100782493 /* 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3D83ED2395A98200782493 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DC3D83F22395A99900782493 /* 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.swift; sourceTree = "<group>"; };
+		DC53BC5023A1E4E100A25E56 /* 11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 11; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC53BC5223A1E4E100A25E56 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DC53BC5823A1E4FB00A25E56 /* 11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.swift; sourceTree = "<group>"; };
 		DC61968F239B5B5E00FFD28C /* 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 6; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC619691239B5B5E00FFD28C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DC619696239B5B6C00FFD28C /* 6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 6.swift; sourceTree = "<group>"; };
@@ -140,6 +166,9 @@
 		DC728542239F0E6200BD66DF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DC728547239F0E7300BD66DF /* 9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9.swift; sourceTree = "<group>"; };
 		DC728549239F0F0A00BD66DF /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
+		DC72854F239F66DC00BD66DF /* 10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 10; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC728551239F66DC00BD66DF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DC728556239F66F000BD66DF /* 10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.swift; sourceTree = "<group>"; };
 		DCA948AF2396271C00FDD597 /* 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 3; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA948B12396271C00FDD597 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DCA948B62396273400FDD597 /* 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.swift; sourceTree = "<group>"; };
@@ -170,6 +199,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC53BC4D23A1E4E100A25E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC61968C239B5B5E00FFD28C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +221,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DC72853D239F0E6200BD66DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC72854C239F66DC00BD66DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,6 +290,15 @@
 			path = 2;
 			sourceTree = "<group>";
 		};
+		DC53BC5123A1E4E100A25E56 /* 11 */ = {
+			isa = PBXGroup;
+			children = (
+				DC53BC5223A1E4E100A25E56 /* main.swift */,
+				DC53BC5823A1E4FB00A25E56 /* 11.swift */,
+			);
+			path = 11;
+			sourceTree = "<group>";
+		};
 		DC619690239B5B5E00FFD28C /* 6 */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +325,15 @@
 				DC728549239F0F0A00BD66DF /* Computer.swift */,
 			);
 			path = 9;
+			sourceTree = "<group>";
+		};
+		DC728550239F66DC00BD66DF /* 10 */ = {
+			isa = PBXGroup;
+			children = (
+				DC728551239F66DC00BD66DF /* main.swift */,
+				DC728556239F66F000BD66DF /* 10.swift */,
+			);
+			path = 10;
 			sourceTree = "<group>";
 		};
 		DCA948B02396271C00FDD597 /* 3 */ = {
@@ -306,6 +367,8 @@
 				DC61969D239B6A6A00FFD28C /* 7 */,
 				DC059114239D892D00E9A418 /* 8 */,
 				DC728541239F0E6200BD66DF /* 9 */,
+				DC728550239F66DC00BD66DF /* 10 */,
+				DC53BC5123A1E4E100A25E56 /* 11 */,
 				DCD86590239448D1003FD49F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -323,6 +386,8 @@
 				DC61969C239B6A6A00FFD28C /* 7 */,
 				DC059113239D892D00E9A418 /* 8 */,
 				DC728540239F0E6200BD66DF /* 9 */,
+				DC72854F239F66DC00BD66DF /* 10 */,
+				DC53BC5023A1E4E100A25E56 /* 11 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -390,6 +455,23 @@
 			productReference = DC3D83EB2395A98100782493 /* 2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		DC53BC4F23A1E4E100A25E56 /* 11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC53BC5623A1E4E100A25E56 /* Build configuration list for PBXNativeTarget "11" */;
+			buildPhases = (
+				DC53BC4C23A1E4E100A25E56 /* Sources */,
+				DC53BC4D23A1E4E100A25E56 /* Frameworks */,
+				DC53BC4E23A1E4E100A25E56 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 11;
+			productName = 11;
+			productReference = DC53BC5023A1E4E100A25E56 /* 11 */;
+			productType = "com.apple.product-type.tool";
+		};
 		DC61968E239B5B5E00FFD28C /* 6 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC619695239B5B5E00FFD28C /* Build configuration list for PBXNativeTarget "6" */;
@@ -439,6 +521,23 @@
 			name = 9;
 			productName = 9;
 			productReference = DC728540239F0E6200BD66DF /* 9 */;
+			productType = "com.apple.product-type.tool";
+		};
+		DC72854E239F66DC00BD66DF /* 10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC728553239F66DC00BD66DF /* Build configuration list for PBXNativeTarget "10" */;
+			buildPhases = (
+				DC72854B239F66DC00BD66DF /* Sources */,
+				DC72854C239F66DC00BD66DF /* Frameworks */,
+				DC72854D239F66DC00BD66DF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 10;
+			productName = 10;
+			productReference = DC72854F239F66DC00BD66DF /* 10 */;
 			productType = "com.apple.product-type.tool";
 		};
 		DCA948AE2396271C00FDD597 /* 3 */ = {
@@ -532,7 +631,7 @@
 		DCD86587239448D1003FD49F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = xxx;
 				TargetAttributes = {
@@ -542,6 +641,9 @@
 					DC3D83EA2395A98100782493 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					DC53BC4F23A1E4E100A25E56 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					DC61968E239B5B5E00FFD28C = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -549,6 +651,9 @@
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					DC72853F239F0E6200BD66DF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					DC72854E239F66DC00BD66DF = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					DCA948AE2396271C00FDD597 = {
@@ -591,6 +696,8 @@
 				DC61969B239B6A6A00FFD28C /* 7 */,
 				DC059112239D892D00E9A418 /* 8 */,
 				DC72853F239F0E6200BD66DF /* 9 */,
+				DC72854E239F66DC00BD66DF /* 10 */,
+				DC53BC4F23A1E4E100A25E56 /* 11 */,
 			);
 		};
 /* End PBXProject section */
@@ -611,6 +718,16 @@
 			files = (
 				DC3D83F32395A99900782493 /* 2.swift in Sources */,
 				DC3D83EE2395A98200782493 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC53BC4C23A1E4E100A25E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC53BC5723A1E4EB00A25E56 /* Computer.swift in Sources */,
+				DC53BC5323A1E4E100A25E56 /* main.swift in Sources */,
+				DC53BC5923A1E4FB00A25E56 /* 11.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +756,15 @@
 				DC72854A239F0F0A00BD66DF /* Computer.swift in Sources */,
 				DC728543239F0E6200BD66DF /* main.swift in Sources */,
 				DC728548239F0E7300BD66DF /* 9.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC72854B239F66DC00BD66DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC728557239F66F000BD66DF /* 10.swift in Sources */,
+				DC728552239F66DC00BD66DF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,6 +851,24 @@
 			};
 			name = Release;
 		};
+		DC53BC5423A1E4E100A25E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC53BC5523A1E4E100A25E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		DC619693239B5B5E00FFD28C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -771,6 +915,24 @@
 			name = Debug;
 		};
 		DC728545239F0E6200BD66DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DC728554239F66DC00BD66DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC728555239F66DC00BD66DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1003,6 +1165,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DC53BC5623A1E4E100A25E56 /* Build configuration list for PBXNativeTarget "11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC53BC5423A1E4E100A25E56 /* Debug */,
+				DC53BC5523A1E4E100A25E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC619695239B5B5E00FFD28C /* Build configuration list for PBXNativeTarget "6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1026,6 +1197,15 @@
 			buildConfigurations = (
 				DC728544239F0E6200BD66DF /* Debug */,
 				DC728545239F0E6200BD66DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC728553239F66DC00BD66DF /* Build configuration list for PBXNativeTarget "10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC728554239F66DC00BD66DF /* Debug */,
+				DC728555239F66DC00BD66DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
