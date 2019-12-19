@@ -85,7 +85,7 @@ let count = s.count * 10_000 - offset
 print("Only have to worry about \(count) numbers which is \(count/s.count) times more.")
 print("This is o2, meaning \(-t.timeIntervalSinceNow * Double((count/s.count)*(count/s.count)/86400)) days.  😢🐼")
 
-print("time to get aggro!")
+print("Time to get aggro!")
 s = bulkupInput(s: s, i: count)
 t = Date()
 print("Part 2: \(aggroFirstEight(s: s, i: i))  ")
