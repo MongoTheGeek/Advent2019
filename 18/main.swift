@@ -241,24 +241,25 @@ func solve2(distances:Array<Array<Int>>,blocking:Array<UInt32>) -> (Int,String){
 }
 
 var (distances,blocking) = parseArray(input: test1)
-print(test1a,solve(distances: distances, blocking: blocking))
-print(test1a,solve2(distances: distances, blocking: blocking))
-
-(distances,blocking) = parseArray(input: test2)
-print(test2a,solve(distances: distances, blocking: blocking))
-print(test2a,solve2(distances: distances, blocking: blocking))
-
-(distances,blocking) = parseArray(input: test3)
-print(test3a,solve2(distances: distances, blocking: blocking))
-
-(distances,blocking) = parseArray(input: test4)
-print(test4a,solve2(distances: distances, blocking: blocking))
-
-(distances,blocking) = parseArray(input: test5)
-print(test5a,solve2(distances: distances, blocking: blocking))
-
+//print(test1a,solve(distances: distances, blocking: blocking))
+//print(test1a,solve2(distances: distances, blocking: blocking))
+//
+//(distances,blocking) = parseArray(input: test2)
+//print(test2a,solve(distances: distances, blocking: blocking))
+//print(test2a,solve2(distances: distances, blocking: blocking))
+//
+//(distances,blocking) = parseArray(input: test3)
+//print(test3a,solve2(distances: distances, blocking: blocking))
+//
+//(distances,blocking) = parseArray(input: test4)
+//print(test4a,solve2(distances: distances, blocking: blocking))
+//
+//(distances,blocking) = parseArray(input: test5)
+//print(test5a,solve2(distances: distances, blocking: blocking))
+//
 (distances,blocking) = parseArray(input: input)
-print(solve2(distances: distances, blocking: blocking))
-
-//(distances,blocking) = parseArray(input: input2a)
 //print(solve2(distances: distances, blocking: blocking))
+
+let points = P2_parseArray(input: input)
+let startPoints = points.filter{$0.value.start}
+print(startPoints.reduce(0,{$0 + P2_Solve(input: $1.value, map: points)}))
