@@ -54,6 +54,8 @@ class Computer {
     var final: ((Int64) -> ())?
     var relative = 0
     var i: Int = 0
+    var debug = false
+
     init(program:Array<Int64>, input:Array<Int64>){
         self.program = program
         self.queue = OperationQueue()
@@ -99,9 +101,11 @@ class Computer {
             switch command {
             case 1:
                 write(i: reg3i, data: reg1+reg2)
+                if debug {print(i , program[i], "Write \(reg1) + \(reg2) to \(reg3i)")}
                 i += 4
             case 2:
                 write(i: reg3i, data: reg1*reg2)
+                if debug {print(i , program[i], "Write \(reg1) * \(reg2) to \(reg3i)")}
                 i += 4
             case 3:
                 if input.count == 0 {
@@ -109,33 +113,40 @@ class Computer {
                     return
                 }
                 write(i: reg1i, data: input[0])
+                if debug {print(i , program[i], "Input \(input[0]) to \(reg1i)")}
                 input = Array(input.dropFirst())
                 i += 2
             case 4:
 //                print(reg1)
                 if let output = output {output(reg1)}
+                if debug {print(i , program[i], "Output \(reg1)")}
                 finalValue = reg1
                 i += 2
             case 5:
+                if debug {print(i , program[i], "if \(reg1) goto \(reg2)")}
                 if reg1 != 0 {
                     i = Int(reg2)
                 } else {
                     i += 3
                 }
             case 6:
+                if debug {print(i , program[i], "if not \(reg1) goto \(reg2)")}
                 if reg1 == 0 {
                     i = Int(reg2)
                 } else {
                     i += 3
                 }
             case 7:
+                if debug {print(i , program[i], "Write \(reg1) < \(reg2) to \(reg3i)")}
                 write(i: reg3i, data: (reg1 < reg2 ? 1 : 0))
                 i += 4
             case 8:
+                if debug {print(i , "Write \(reg1) == \(reg2) to \(reg3i)")}
                 write(i: reg3i, data: (reg1 == reg2 ? 1 : 0))
                 i += 4
             case 9:
                 relative += Int(reg1)
+                if debug {print(i , "Increment Relative by \(reg1) currently \(relative)")}
 //                print(reg1,relative,i)
                 i += 2
             default:
