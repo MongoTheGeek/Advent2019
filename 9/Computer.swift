@@ -17,6 +17,16 @@ class Computer {
         case position, immediate, relative
     }
 
+    func inputString(s:String){
+        queue.addOperation {
+            let n:Array<Int64> = s.cString(using: .ascii)!.map{Int64($0)}.dropLast()
+            self.input.append(contentsOf:n)
+            if self.status == .paused {
+                self.start()
+            }
+        }
+    }
+    
     func read(i:Int, mode:Mode) -> Int64{
         if mode == .immediate {return Int64(program[i])}
         while i >= program.count {
