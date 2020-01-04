@@ -47,7 +47,7 @@ var program = input
 program[0]=2
 var stringInput = "C,C,B,A,B,A,B,A,A,C\nR,10,R,4,R,4\nL,12,L,12,R,8,R,8\nR,8,L,4,R,4,R,10,R,8\nN\n"
 
-let computer2 = Computer(program: program, input: stringInput.map{Int64($0.asciiValue!)})
+let computer2 = Computer(program: program, input: stringInput.map{Int($0.asciiValue!)})
 
 computer2.output = {
     guard $0<255 else {return}

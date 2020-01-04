@@ -79,7 +79,7 @@ repairDrone.output = {
             walls.insert(Point(x:x + 1, y: y))
         }
         direction = direction.prev
-        repairDrone.input.append(Int64(direction.rawValue))
+        repairDrone.input.append(Int(direction.rawValue))
     case 1:
         stepCount += 1
         switch direction {
@@ -95,7 +95,7 @@ repairDrone.output = {
         if walls.count != 0 {
             direction = direction.next
         }
-        repairDrone.input.append(Int64(direction.rawValue))
+        repairDrone.input.append(Int(direction.rawValue))
     case 2:
         stepCount += 1
         switch direction {
@@ -115,7 +115,7 @@ repairDrone.output = {
             direction = direction.next
         }
     if stepCount<3000 {
-            repairDrone.input.append(Int64(direction.rawValue))
+            repairDrone.input.append(Int(direction.rawValue))
         }
     default:
         fatalError()

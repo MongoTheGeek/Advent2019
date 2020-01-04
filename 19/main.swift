@@ -9,11 +9,11 @@
 import Foundation
 
 
-var count:Int64 = 0
+var count:Int = 0
 var temp = ""
 
-for j:Int64 in 0..<50 {
-    for i:Int64 in 0..<50 {
+for j:Int in 0..<50 {
+    for i:Int in 0..<50 {
         let c = Computer(program: input, input: [i,j])
         c.output = {
             count += $0
@@ -29,7 +29,7 @@ print("Part 1:\(count)")
 
 func solve(_ i:Int,_ j:Int) ->Bool{
     var temp:Bool = false
-    let c = Computer(program: input, input: [Int64(i),Int64(j)])
+    let c = Computer(program: input, input: [Int(i),Int(j)])
     c.output = {temp = $0 == 1}
     c.doIt()
     return temp

@@ -49,12 +49,12 @@ for (x,y,z) in test2 {
     planets.append( Planet(x: x, y: y, z: z))
 }
 
-func LCD(_ x:Int64,_ y:Int64) -> Int64 {
-    var out:Int64 = 1
+func LCD(_ x:Int,_ y:Int) -> Int {
+    var out:Int = 1
     var m = min(x,y)
     var x = max(x,y)
     if x%m == 0 {return x}
-    var d:Int64 = 2
+    var d:Int = 2
     repeat {
         if m%d == 0 && x%d == 0 {
             out *= d
@@ -114,9 +114,9 @@ for (x,y,z) in input {
 }
 
 
-var cycle:Int64 = 0
+var cycle:Int = 0
 let inputPlanets = planets
-var cycleLength = Array(repeating: Int64(0), count: 3)
+var cycleLength = Array(repeating: Int(0), count: 3)
 
 repeat {
     var foundx = true

@@ -19,7 +19,7 @@ class Computer {
 
     func inputString(s:String){
         queue.addOperation {
-            let n:Array<Int64> = s.cString(using: .ascii)!.map{Int64($0)}.dropLast()
+            let n:Array<Int> = s.cString(using: .ascii)!.map{Int($0)}.dropLast()
             self.input.append(contentsOf:n)
             if self.status == .paused {
                 self.start()
@@ -27,8 +27,8 @@ class Computer {
         }
     }
     
-    func read(i:Int, mode:Mode) -> Int64{
-        if mode == .immediate {return Int64(program[i])}
+    func read(i:Int, mode:Mode) -> Int{
+        if mode == .immediate {return Int(program[i])}
         while i >= program.count {
             program.append(0)
         }
@@ -48,7 +48,7 @@ class Computer {
         return n
     }
 
-    func write(i:Int, data:Int64){
+    func write(i:Int, data:Int){
         while i >= program.count {
             program.append(0)
         }
@@ -56,17 +56,17 @@ class Computer {
     }
 
     let queue: OperationQueue
-    var program: Array<Int64>
+    var program: Array<Int>
     var status: Status
-    var input: Array<Int64> = []
-    var finalValue: Int64 = -1
-    var output: ((Int64) -> ())?
-    var final: ((Int64) -> ())?
+    var input: Array<Int> = []
+    var finalValue: Int = -1
+    var output: ((Int) -> ())?
+    var final: ((Int) -> ())?
     var relative = 0
     var i: Int = 0
     var debug = false
 
-    init(program:Array<Int64>, input:Array<Int64>){
+    init(program:Array<Int>, input:Array<Int>){
         self.program = program
         self.queue = OperationQueue()
         self.status = .initialized
@@ -74,7 +74,7 @@ class Computer {
         self.queue.maxConcurrentOperationCount = 1
     }
     
-    func addInput(n:Int64) -> () {
+    func addInput(n:Int) -> () {
         if self.status != .finished {
             queue.addOperation {
                 self.input.append(n)
@@ -100,8 +100,8 @@ class Computer {
                 immediate.append(Mode(rawValue:(c%10))!)
                 c /= 10
             }
-            var reg1:Int64 = 0
-            var reg2:Int64 = 0
+            var reg1:Int = 0
+            var reg2:Int = 0
             var reg3i = 0
             var reg1i = 0
             reg1 = read(i: i+1, mode: immediate[0])
