@@ -66,9 +66,13 @@ class Computer {
     var i: Int = 0
     var debug = false
 
-    init(program:Array<Int>, input:Array<Int>){
+    init(program:Array<Int>, input:Array<Int>, q:OperationQueue? = nil){
         self.program = program
-        self.queue = OperationQueue()
+        if q == nil {
+            self.queue = OperationQueue()
+        } else {
+            self.queue = q!
+        }
         self.status = .initialized
         self.input = input
         self.queue.maxConcurrentOperationCount = 1
